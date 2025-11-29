@@ -54,38 +54,29 @@ print("MSE (%) :", mse_pct)
 print("RMSE (%):", rmse_pct)
 
 # --- (A) MSE 그래프 ---
-plt.figure(figsize=(10, 5))
-plt.plot(test_dates, (y_test - y_pred)**2)
-plt.title("Prediction Error (MSE) by Date")
+plt.figure(figsize=(14, 24))
+plt.subplot(3, 1, 1)
+plt.plot(test_dates, (y_test - y_pred)**2, linewidth=1)
+plt.title("Prediction Error (MSE) by Date", fontsize=15)
 plt.xlabel("Date")
 plt.ylabel("Squared Error")
-plt.xticks(rotation=45)
 plt.grid(True)
-plt.tight_layout()
-plt.show()
 
 # --- (B) RMSE 그래프 ---
-plt.figure(figsize=(10, 5))
-plt.plot(test_dates, np.sqrt((y_test - y_pred)**2))
+plt.subplot(3, 1, 2)
+plt.plot(test_dates, np.sqrt((y_test - y_pred)**2), linewidth=1)
 plt.title("Prediction Error (RMSE) by Date")
 plt.xlabel("Date")
 plt.ylabel("Root Squared Error")
-plt.xticks(rotation=45)
 plt.grid(True)
-plt.tight_layout()
 
-
-plt.figure(figsize=(12, 6))
-
-plt.plot(test_dates, y_test, label='Actual Price', linewidth=2)
-plt.plot(test_dates, y_pred, label='Predicted Price', linewidth=2)
-
-plt.title("Actual vs Predicted USD/KRW Price (Test Data)")
+plt.subplot(3, 1, 3)
+plt.plot(test_dates, y_test, label='Actual Price', linewidth=1.5)
+plt.plot(test_dates, y_pred, label='Predicted Price', linewidth=1.5)
+plt.title("Actual vs Predicted USD/KRW Price (Test Data)", fontsize=15)
 plt.xlabel("Date")
 plt.ylabel("Price")
-plt.xticks(rotation=45)
 plt.legend()
 plt.grid(True)
-plt.tight_layout()
 
 plt.show()
