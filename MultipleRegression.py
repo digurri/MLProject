@@ -53,6 +53,24 @@ rmse_pct = np.sqrt(mse_pct)
 print("MSE (%) :", mse_pct)
 print("RMSE (%):", rmse_pct)
 
+print("MSE (%) :", mse_pct)
+print("RMSE (%):", rmse_pct)
+
+# (3) MSE / RMSE 요약 통계 - 포스터 기재용 (평가 지표)
+print("\n===== MSE / RMSE Summary (Price 기준) =====")
+
+print("▶ MSE")
+print(f"  Min  MSE : {mse.min():.4f}")
+print(f"  Max  MSE : {mse.max():.4f}")
+print(f"  Mid  MSE : {mse.median():.4f}")
+print(f"  Mean MSE : {mse.mean():.4f}")
+
+print("\n▶ RMSE")
+print(f"  Min  RMSE : {rmse.min():.4f}")
+print(f"  Max  RMSE : {rmse.max():.4f}")
+print(f"  Mid  RMSE : {rmse.median():.4f}")
+print(f"  Mean RMSE : {rmse.mean():.4f}")
+
 # --- (A) MSE 그래프 ---
 plt.figure(figsize=(14, 24))
 plt.subplot(3, 1, 1)
