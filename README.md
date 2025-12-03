@@ -1,4 +1,4 @@
-## Term Project <br>
+## Team 07 Term Project <br>
 **원-달러 환율 예측 모델 성능 비교**: 다중 선형 회귀, CNN+LSTM, Gradient Boosting <br>
 
 ### 2025년 2학기 기계학습 (38428-02) - 이형준 교수님
