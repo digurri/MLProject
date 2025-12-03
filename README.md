@@ -3,7 +3,7 @@
 
 <p>
 <h1>원-달러 환율 예측 모델 성능 비교: </h1>
-<h2> 다중 선형 회귀, CNN+LSTM, Gradient Boosting </h2>
+일바 <h2> 다중 선형 회귀, CNN+LSTM, Gradient Boosting </h2>
 </p>
 
 ## 2025년 2학기 기계학습 (38428-02) - 이형준 교수님
